@@ -12,6 +12,8 @@ namespace PUTM_CAN{
 		uint32_t Axis_Error;//Axis error
 		uint8_t Axis_State;//Axis State
 		uint8_t Flags;
+		uint8_t Flags1;
+		uint8_t Flags2;
 	};
 
 	struct __attribute__ ((packed)) Odrive_Estop{
