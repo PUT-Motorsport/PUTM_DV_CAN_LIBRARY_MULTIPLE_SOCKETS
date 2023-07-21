@@ -20,8 +20,7 @@ namespace PUTM_CAN{
 	};
 
 	struct __attribute__ ((packed)) Odrive_Get_Motor_Error{
-		uint8_t Active_Errors;
-		uint8_t Disarm_Reason;
+		uint64_t Error;
 	};
 
 	struct __attribute__ ((packed)) Odrive_Get_Encoder_Error{
