@@ -12,19 +12,19 @@ namespace PUTM_CAN{
 		uint32_t Axis_Error;//Axis error
 		uint8_t Axis_State;//Axis State
 		uint8_t Flags;
+		uint8_t Flags1;
+		uint8_t Flags2;
 	};
 
 	struct __attribute__ ((packed)) Odrive_Estop{
 	};
 
 	struct __attribute__ ((packed)) Odrive_Get_Motor_Error{
-		uint8_t Active_Errors;
-		uint8_t Disarm_Reason;
+		uint64_t Error;
 	};
 
 	struct __attribute__ ((packed)) Odrive_Get_Encoder_Error{
-		uint8_t Active_Errors;
-		uint8_t Disarm_Reason;
+		uint32_t Error;
 	};
 
 	struct __attribute__ ((packed)) Odrive_Set_Axis_Node_ID{
