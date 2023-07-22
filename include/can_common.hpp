@@ -58,6 +58,8 @@ namespace PUTM_CAN
 
     template <>
     constexpr uint16_t can_id<DV_Ass> = DV_ASS_CAN_ID;
+    template <>
+    constexpr uint16_t can_id<DV_TC_control> = DV_TC_CAN_ID;
 
     template <>
     constexpr uint16_t can_id<Lap_timer_Main> = LAP_TIMER_MAIN_CAN_ID;
