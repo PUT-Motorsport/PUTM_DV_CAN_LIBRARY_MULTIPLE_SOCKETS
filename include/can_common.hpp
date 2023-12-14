@@ -15,6 +15,7 @@
 #include "can_headers/PM08-CANBUS-WHEELTEMP.hpp"
 #include "can_headers/PM08-CANBUS-YAWPROBE.hpp"
 #include "can_headers/PM08-CANBUS-ODRIVE.hpp"
+#include "can_headers/PM08-CANBUS-ASB.hpp"
 
 namespace PUTM_CAN
 {
@@ -26,6 +27,10 @@ namespace PUTM_CAN
 
     template <>
     constexpr uint16_t can_id<Apps_main> = APPS_MAIN_CAN_ID;
+
+    template <>
+    constexpr uint16_t can_id<ASB_main> = ASB_MAIN_CAN_ID;
+
 
     template <>
     constexpr uint16_t can_id<AQ_main> = AQ_MAIN_CAN_ID;
